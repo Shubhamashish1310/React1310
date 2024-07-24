@@ -1,38 +1,18 @@
+
 import './App.css'
-
+import Card from './card.jsx'
 function App() {
+  // const [count, setCount] = useState(0)
+
   return (
-    <div className="bg-white">
-      <header className="absolute inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-          <div className="flex lg:flex-1">
-            <a href="#" className="-m-1.5 p-1.5">
-              <span className="sr-only">Your Company</span>
-              <img className="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt=""/>
-            </a>
-          </div>
-          <div className="flex lg:hidden">
-            <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-              <span className="sr-only">Open main menu</span>
-              <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-            </button>
-          </div>
-          <div className="hidden lg:flex lg:gap-x-12">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Product</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Features</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Marketplace</a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Company</a>
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
-          </div>
-        </nav>
-
-
-      </header>
-    </div>
+    <>
+     <Card img ={"https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTQUGDPvwyF0wgYGdTHO17MuR16MxCSm2iwEZ8NMHkcpniZZ9_ERRW1CkyFg7qJiMGvEIWgqZd8I2ck-TEiZP1ksnw-YdsEqBGy25dktSxvIbiw42IF_L8FvA"}price={"1000"}/>
+     <Card img={"https://theimaginestore.s3.ap-south-1.amazonaws.com/shared/products/572/large/6646fa95d4208.webp"}price={"9000"}/>
+     <Card img={"https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQPRLsLoT0eWVWaF6M1IdQmM4M0eOVNZ6CpS3OjvRxdoRuGNDuRvO42YIk3BOVcy3MXZVJ0B23kLnkASfSANFQtgTAzfClS4albzRd26xZi370FP5dXx8U-"}price={"8000"}/>
+     <Card img={"https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTOFKzzxjMDrcW0eWOJwgS8LgnbYf4jiwNsIShBeM_RwuQQVSwi1JQxb1qjRm59HEKtZhVERKWodioiJnn5EG9zoo9D7O-nMVCh2b4SKJRZBtuUxtYwjF1M"}price={"2000"}/>
+     <Card img={"https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ9KXwkYs95rqEUh3cmZuBB84R0mCAjhAtgGFiZbwDU4OXIkISkt9sl3uSMqmw9LPQOzoolCuoniSvj2t2qiLcoxDd6T63wFzWxqFGKxwTBtsvOb3-dzl5O5_Y"}price={"5000"}/>
+    </>
   )
 }
 
+export default App

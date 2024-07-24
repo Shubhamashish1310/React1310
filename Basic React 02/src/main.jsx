@@ -4,7 +4,11 @@ import App from './App.jsx'
 import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  
   <React.StrictMode>
-    <App />
+    <h1 className='text-5xl text-center'>My Apple Watch</h1>
+    <App/>
+    
+
   </React.StrictMode>,
 )
